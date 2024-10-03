@@ -1,14 +1,29 @@
 def contar_as(frase):
-  """Conta o número de vezes que a letra 'a' aparece em uma frase.
+    """
+    Conta o número de vezes que a letra 'a' aparece em uma frase.
 
-  Args:
-    frase: A frase a ser analisada.
+    Esta função recebe uma frase como entrada, converte todas as letras para minúsculas
+    para garantir que tanto 'a' maiúsculo quanto 'a' minúsculo sejam contados, e então
+    conta quantas vezes a letra 'a' aparece na frase.
 
-  Returns:
-    O número de ocorrências da letra 'a'.
-  """
+    Args:
+        frase (str): A frase a ser analisada.
 
-  return frase.lower().count('a')
+    Returns:
+        int: O número de ocorrências da letra 'a' na frase.
+    """
+    return frase.lower().count('a')
 
-frase = input("Digite uma frase: ")
-print(f"A letra 'a' aparece {contar_as(frase)} vezes na frase.")
+def main():
+    """
+    Função principal que solicita ao usuário uma frase e exibe o número de vezes que a letra 'a' aparece.
+
+    Esta função pede ao usuário para digitar uma frase, chama a função contar_as para contar
+    as ocorrências da letra 'a' na frase fornecida, e então imprime o resultado.
+    """
+    frase = input("Digite uma frase: ")
+    quantidade_as = contar_as(frase)
+    print(f"A letra 'a' aparece {quantidade_as} vezes na frase.")
+
+if __name__ == "__main__":
+    main()
