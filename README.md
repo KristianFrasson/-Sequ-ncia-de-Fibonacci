@@ -1,2 +1,2 @@
-# -Sequ-ncia-de-Fibonacci
+# Fibbonacci Sequence w/ Py
  Sequência de Fibonacci em Python
